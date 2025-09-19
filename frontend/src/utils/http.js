@@ -11,7 +11,7 @@ class Service {
       this.domain = import.meta.env.VITE_DEV_PROXY;
     }
   }
-
+  
   async request(url, method = "POST", data) {
     url = joinURL(this.domain, "api/" + url);
 

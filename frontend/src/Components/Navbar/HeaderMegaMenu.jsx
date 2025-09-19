@@ -12,6 +12,8 @@ import { useDisclosure } from '@mantine/hooks';
 import { IconLogin } from '@tabler/icons-react';
 import { NavLink, Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import { List } from '@mantine/core';
+
 import {
   getIsLoggedIn,
   removeUser,
@@ -22,6 +24,7 @@ const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/profile', label: 'Profile' },
   { to: '/Urlshortener', label: 'url Shortener' },
+   { to: '/url/list', label: 'My Urls' }
 ];
 
 export function HeaderMegaMenu() {
